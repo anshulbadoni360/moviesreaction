@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 
 type FilterTab = "All" | VideoStatus;
 
-export function VideosPage() {
+export default function VideosPage() {
   const { activeJob } = useAnalysis();
   const [videos, setVideos] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<FilterTab>("All");
@@ -272,5 +272,3 @@ export function VideosPage() {
     </div>
   );
 }
-
-export default VideosPage;
